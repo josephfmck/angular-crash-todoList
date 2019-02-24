@@ -1,0 +1,7 @@
+<form class="form" (ngSubmit)="onSubmit()">
+  <!--ngModel needs forms module in app.module.ts-->
+  <input type="text" name="title" [(ngModel)]="title"
+  placeholder="Add Todo...">
+  {{ title }}
+  <input type="submit" value="Submit" class="btn">
+</form>
